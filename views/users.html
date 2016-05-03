@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h3>Users</h3>
+  <hr>
+  <ul class="list-unstyled">
+    <!-- PLACEHOLDER LIST OF PAGES -->
+    {% for user in users %}
+      <div class="content">
+<!--         <p class="by">{{page.title}}</p> -->
+        <li><a href="/wiki/users/{{ user.id }}">{{ user.name }}</a></li>
+      </div>
+    {% endfor %}
+  </ul>
+{% endblock %}
